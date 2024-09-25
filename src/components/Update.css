@@ -1,0 +1,8 @@
+.contain{
+background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-left: 260px;
+    background-position: center; /* Ensure the image is centered */
+    background-image: url('https://img.freepik.com/free-vector/office-interior-open-space-flat-design-vector-illustration-business-people-talking-modern-meeting-room-businessmen-businesswomen-sitting-conference-hall_126523-3097.jpg');
+}

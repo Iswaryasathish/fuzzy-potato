@@ -1,0 +1,54 @@
+/* CalendarComponent.css */
+
+/* Ensure the calendar container is responsive */
+.pro1{
+    margin-left: 280px;
+}
+.calendar-container {
+    margin-left: 280px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Make sure the calendar adjusts to the screen width */
+.rbc-calendar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Ensure the calendar adjusts to different screen sizes */
+@media (max-width: 1200px) {
+    .rbc-calendar {
+        font-size: 0.9em; /* Slightly reduce font size on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .rbc-calendar {
+        font-size: 0.8em; /* Further reduce font size on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .rbc-calendar {
+        font-size: 0.7em; /* Reduce font size for mobile screens */
+    }
+}
+
+/* Adjust calendar header and day view for smaller screens */
+@media (max-width: 576px) {
+    .rbc-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rbc-toolbar button {
+        margin-bottom: 0.5em;
+    }
+
+    .rbc-calendar {
+        padding: 0.5em;
+    }
+}

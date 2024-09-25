@@ -1,0 +1,101 @@
+/* Ensure that the body and html take up the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content styling */
+.main {
+    margin-left: 280px; /* Adjust to account for the fixed navbar width */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease; /* Smooth transition when navbar width changes */
+}
+
+/* Content area styling */
+.content {
+    background-image: url('https://img.freepik.com/free-vector/office-background-video-conferencing_23-2148641674.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 260px;
+    background-position: center; /* Ensure the image is centered */
+    min-height: 100vh;
+}
+.page{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-left: 260px;
+    background-position: center; /* Ensure the image is centered */
+    background-image: url('https://c0.wallpaperflare.com/preview/19/153/130/business-background-illustration-people.jpg');
+}
+
+/* Optional: Additional styling for main content */
+.main h2 {
+    margin-top: 0;
+    margin-right: 230px;
+    color: rgb(15, 3, 26);
+    font-size: 2rem; /* Responsive font size */
+    font-weight: 700;
+}
+
+.main p {
+    font-size: 1rem; /* Responsive font size */
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main {
+        margin-left: 240px; /* Adjust for smaller screens */
+    }
+
+    .main h2 {
+        font-size: 1.8rem;
+    }
+
+    .main p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        margin-left: 200px; /* Adjust for smaller screens */
+    }
+
+    .main h2 {
+        font-size: 1.6rem;
+    }
+
+    .main p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0; /* Full-width content for very small screens */
+    }
+
+    .main h2 {
+        font-size: 1.4rem;
+    }
+
+    .main p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h2 {
+        font-size: 1.2rem;
+    }
+
+    .main p {
+        font-size: 0.75rem;
+    }
+}

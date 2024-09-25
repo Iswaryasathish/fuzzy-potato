@@ -1,0 +1,127 @@
+/* Base styles for the navigation bar */
+.navbar {
+    width: 280px;
+    background: white;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    border: 4px solid black;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+  }
+ 
+  .navbar h2 {
+    margin-top: 0;
+    color: white;
+  }
+  
+  /* Navigation list styles */
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 10px 0;
+    height: 35px;
+    margin-left: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(8, 85, 99);
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    height: 100%;
+    /* Centers text vertically */
+    padding: 0 7px;
+    border-radius: 4px;
+  }
+  
+  .navbar ul li a:hover {
+    color: black;
+    background-color: #f0f0f0;
+  }
+  
+  /* Button styles */
+  .navbar button {
+    display: block;
+    width: 190px;
+    padding: 5px;
+    background: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 16px;
+  }
+  
+  .navbar button:hover {
+    background: #f3051c;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .navbar {
+      width: 240px;
+    }
+  
+    .navbar ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      width: 200px;
+    }
+  
+    .navbar ul li {
+      height: 45px;
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      width: 100%;
+      height: auto;
+      position: static;
+      border-right: none;
+      box-shadow: none;
+      border-bottom: 3px solid black;
+    }
+  
+    .navbar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .navbar ul li {
+      height: auto;
+      width: auto;
+      margin: 5px;
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+      line-height: normal; /* Adjust line height */
+      padding: 10px;
+    }
+  }
+  

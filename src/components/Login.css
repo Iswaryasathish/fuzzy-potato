@@ -1,0 +1,73 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/background-neon-light-abstract-background-3d-technology-empty-space-scene-spotlights-dark-night-virtual-reality-cyber-futuristic-scifi-background-street-floor-studio-mockups_76964-377338.jpg');
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-container h2{
+    color: white;
+    margin-bottom: 4rem;
+}
+h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.login-form {
+    background: #d6d8da;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(245, 241, 241, 0.1);
+    width: 300px;
+    max-width: 100%;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #083e79;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.role-selector {
+    margin-bottom: 1rem;
+}
+
+.role-selector label {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.role-selector input {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+h4{
+    margin-bottom: 0.5rem;
+}

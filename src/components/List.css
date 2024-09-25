@@ -1,0 +1,93 @@
+/* Reset some default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic layout styles */
+  .content2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 270px;
+    
+  }
+  
+  .main2 {
+    padding: 1rem;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table, th, td {
+    border: 2px solid #181717;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #93ccec;
+  }
+  
+  td img {
+    border-radius: 50%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    /* Stack table headers and cells vertically on small screens */
+    thead {
+      display: none;
+    }
+  
+    tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+    }
+  
+    td {
+      display: block;
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 0.75rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+  
+  /* Smaller screens (mobile) */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  

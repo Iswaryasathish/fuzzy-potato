@@ -1,0 +1,67 @@
+/* Previous styles remain unchanged */
+
+.employee-details {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.employee-details h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+td:first-child {
+  font-weight: bold;
+  background-color: #e9ecef;
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  table {
+    display: block; /* Make table scrollable on small screens */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  tr {
+    display: block; /* Stack table rows */
+    margin-bottom: 10px;
+  }
+
+  td {
+    display: block; /* Stack table data cells */
+    text-align: right;
+    padding: 8px;
+    border: none; /* Remove border for stacked view */
+  }
+
+  td:first-child {
+    text-align: left; /* Align label to the left */
+    font-weight: bold;
+  }
+}
+
+
+
+  

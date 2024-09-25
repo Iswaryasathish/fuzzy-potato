@@ -1,0 +1,35 @@
+/* MessageBox.css */
+.message-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .message-box.success {
+    background-color: #28a745; /* Green for success */
+  }
+  
+  .message-box.error {
+    background-color: #dc3545; /* Red for errors */
+  }
+  
+  .message-box.info {
+    background-color: #17a2b8; /* Blue for info */
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
